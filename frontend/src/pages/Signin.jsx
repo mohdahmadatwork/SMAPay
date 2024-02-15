@@ -6,7 +6,9 @@ import { validateSignIn, validateSignInDataAtOnce } from '../utils/validates';
 import { useLogin } from '../contextApi/login-context';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import { BASE_URL } from '../urls/urls';
 function Signin() {
+  console.log("BASE_URL",BASE_URL);
   const [errors,setErrors] = useState({});
   const {isLogin,doLogin,checkLogin} = useLogin();
   const [signInBody,setSignInBody] = useState({

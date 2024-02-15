@@ -34,6 +34,7 @@ export const validateField = (fieldName, value,data) => {
 
 export const validateSignUpDataAtOnce  = (data) => {
     try {
+        console.log("signupbody",data);
         signUpPassSchema.parse({password:data.password , confirmpassword:data.confirmpassword})
         delete data.confirmpassword;
         SignupSchema.parse(data);

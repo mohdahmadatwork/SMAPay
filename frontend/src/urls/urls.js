@@ -1,4 +1,5 @@
-export const BASE_URL = "http://localhost:5000/api/v1";
+export const BASE_URL = `http://localhost:3000/api/v1`;
+console.log("BASE_URL",BASE_URL);
 export const API_ENDPOINTS = {
     LOGIN: '/user/signin',
     SIGNUP: '/user/signup',
